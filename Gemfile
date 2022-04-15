@@ -52,6 +52,10 @@ group :test do
   gem 'webdrivers'
 end
 
+group :production do
+  gem 'pg', '1.1.4'
+end
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
@@ -59,3 +63,6 @@ gem 'devise'
 gem "refile", require: "refile/rails", github: 'manfe/refile'
 gem "refile-mini_magick"
 gem "bulma-rails"
+
+gem "refile-s3"
+gem 'dotenv-rails'
