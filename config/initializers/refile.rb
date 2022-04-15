@@ -3,8 +3,8 @@ Refile.secret_key = '9cf91134c4ab51886f357a6a4d7d4eb7f33a4d395061980e924dd546169
 require "refile/s3"
 
 aws = {
-  access_key_id: "AWS_ACCESS_KEY_ID",
-  secret_access_key: "AWS_SECRET_ACCESS_KEY",
+  access_key_id: ENV["AWS_ACCESS_KEY_ID"],
+  secret_access_key: ENV["AWS_SECRET_ACCESS_KEY"],
   region: "ap-northeast-1",
   bucket: "rails-recipe",
 }
